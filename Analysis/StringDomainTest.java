@@ -12,7 +12,7 @@ import it.unive.lisa.analysis.nonrelational.value.SignDomain;
 import it.unive.lisa.imp.IMPFrontend;
 import it.unive.lisa.imp.ParsingException;
 
-public class SignDomainTest {
+public class StringDomainTest {
 
 	@Test
 	public void testSigns() throws  AnalysisException, ParsingException  {
@@ -28,7 +28,7 @@ public class SignDomainTest {
 		// }
 		conf.setAbstractState(LiSAFactory.getDefaultFor(AbstractState.class, 
 				LiSAFactory.getDefaultFor(HeapDomain.class),
-				new SignDomain()));
+				new StringDomain()));
 		LiSA lisa = new LiSA(conf);
 		
 		// try {
