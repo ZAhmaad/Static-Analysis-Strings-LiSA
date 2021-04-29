@@ -1,11 +1,4 @@
-class Example2 {
-	main(cond) {
-		def x = "a";
-		while(cond)
-			x = strcat(strcat("0", x), "1");
-		return x;
-	}
-}
+
 
 class program1 {
     getPerishablePrices(lowerBound) {
@@ -16,4 +9,15 @@ class program1 {
 		query = strcat(query, strcat(strcat("TYPE IN (", "SELECT TYPECODE, TYPEDESC FROM TYPES WHERE NAME = 'fish' OR NAME = 'meat'"), ");"));
 		return query;
     }
+}
+
+
+
+class Example2 {
+	main(cond) {
+		def x = "a";
+		while(cond)
+			x = strcat(strcat("0", x), "1");
+		return x;
+	}
 }
